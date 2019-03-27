@@ -1,0 +1,150 @@
+@import "vars"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  body .head-menu
+    padding-bottom: 50px
+    .container
+      position: relative
+    .head-menu-navbar
+      .navbar-nav
+        margin-right: 0
+      .form-search
+        position: absolute
+        right: 0
+        top: 100%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  body
+    .head-info 
+      padding: 140px 0
+      h1
+        font-size: 50px
+      h3
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 75px
+    main
+      section .main-p
+        padding: 0
+      .about-us
+        .row
+          display: flex
+          justify-content: center
+      .pricing-plan, .our-team
+        .row
+          justify-content: center
+        &__wrap-item
+          margin-top: 30px
+      .blog .blog__wrap-posts
+        &__one-post
+          &__image
+            width: 40%
+          &__desc
+            width: 60%
+            padding: 0
+            padding-bottom: 30px
+      .contact-us__form__input-wrap input
+        width: 48%
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991.5px)
+  body .head-menu
+    padding-bottom: 30px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  body
+    .head-info 
+      padding: 100px 0
+      h1
+        font-size: 40px
+      h3
+        font-size: 16px
+        margin-top: 15px
+        margin-bottom: 50px
+    main
+      .about-us
+        &__p
+          margin-bottom: 95px
+        &__items
+          &:nth-child(2)
+            margin: 35px 0
+      .blog .blog__wrap-posts
+        &__one-post
+          flex-direction: column
+          &__image
+            width: 100%
+            img
+              padding: 0
+          &__desc
+            width: 100%
+            padding: 30px 0
+            .metadata
+              margin-top: 7px
+      .contact-us__form__input-wrap
+        flex-direction: column
+        input
+          width: 100%
+          margin-left: 0
+          &:first-child()
+            margin-bottom: 15px
+  body section
+    padding: 85px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  body
+    .head
+      .head-menu
+        padding: 10px 0
+      .head-info
+        padding: 100px 0
+        h1
+          margin-bottom: 50px
+        h3
+          display: none
+        i
+          bottom: 7%
+    main
+      section
+        padding: 100px 0
+        .main-p
+          margin-bottom: 50px
+      .our-services
+        padding-bottom: 70px
+      .latest-works
+        &__nav
+          justify-content: flex-start
+          margin-bottom: 30px !important
+          li
+            margin: 6px
+        button
+          margin-top: 60px
+
+  /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+  body
+    .head-menu
+      &-navbar
+        .navbar-brand
+          font-size: 21px
+    .head-info
+      h1
+        font-size: 35px
+      .buttons
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        .butt-accent
+          margin: 0
+          margin-top: 15px
+    main
+      .blog__wrap-posts__one-post__desc .metadata
+        font-size: 13px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/

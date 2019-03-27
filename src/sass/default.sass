@@ -1,0 +1,99 @@
+::placeholder
+	color: #000
+
+::selection
+	background-color: $bg-color
+  color: red
+
+body
+  position: relative
+  min-width: 320px
+  background-color: $bg-color
+  color: $text
+  font-family: $default-font
+  font-size: $base-size
+  line-height: 1.5
+  overflow-x: hidden
+
+h1
+  font-size: 60px
+h2
+  font-size: 50px
+h3 
+  font-size: 22px
+h4
+  font-size: 20px
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+a
+  color: $accent-color
+  transition: all .25s ease
+  &:hover
+    color: lighten($accent-color, 15%)
+    transition: all .25s ease
+  &:focus, &:active, &:visited
+    border: none
+    outline: none
+
+i
+  font-family: 'Font Awesome 5 Free'
+
+section
+  padding: 125px 0
+  .main-p
+    padding: 0 21%
+    margin-bottom: 130px
+  .main-h3
+    font-weight: bold
+    margin-bottom: 25px
+  h4
+    font-weight: 600
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.butt, .butt-accent
+  border: 3px solid $color-butt-bd
+  padding: 15px 35px
+  background-color: transparent
+  border-radius: 0
+  text-transform: uppercase
+  text-align: center
+  font-family: "Roboto", sans-serif
+  font-size: 20px
+  color: $text
+  transition: all .2s ease
+  &:focus
+    box-shadow: none
+  &:hover
+    transition: all .2s ease
+
+.butt-accent
+  border-color: $accent-color
+  background-color: $accent-color
+  color: #fff
+  transition: all .2s ease
+  &:hover
+    border-color: rgba(255,255,255, .25)
+    transition: all .2s ease
+
+.tac
+  text-align: center
+
+.df
+  display: flex
+
+.jcc
+  justify-content: center
+
+.aic
+  align-items: center
+
+.fdc
+  flex-direction: column
